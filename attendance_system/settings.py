@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'attendance.apps.AttendanceConfig'
+    'attendance.apps.AttendanceConfig',
 ]
 
 MIDDLEWARE = [
@@ -85,7 +85,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'attendance_system_db',
         'USER': 'ahmed',
-        'PASSWORD': 'Iwillnotdie1937',
+        'PASSWORD': '$Swordfish1987',
         'HOST': '127.0.0.1',          
         'PORT': '3306',
     }

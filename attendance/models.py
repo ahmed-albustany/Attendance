@@ -1,7 +1,5 @@
 from django.db import models
 
-
-# Create your models here.
 class Individual(models.Model):
     id_type = models.CharField(max_length=50)  # e.g., Passport, National ID
     id_number = models.CharField(max_length=50)  # Individual ID number
@@ -14,7 +12,6 @@ class Individual(models.Model):
 
     def __str__(self):
         return f"{self.name} ({self.id_number})"
-    
 
 class WaitingList(models.Model):
     id = models.AutoField(primary_key=True)  # Auto increment key
@@ -26,3 +23,18 @@ class WaitingList(models.Model):
 
     def __str__(self):
         return f"WaitingList: {self.id} - {self.beneficiary.name}"
+
+class Course(models.Model):
+    id = models.AutoField(primary_key=True)
+    name = models.CharField(max_length=100)
+    age_range = models.CharField(
+        max_length=10,
+        choices=[('12-14', '12-14'), ('15-18', '15-18')]  # Corrected syntax
+    )
+    age_range = models.CharField(max_length=10)
+    start_date = models.DateField()
+    end_date = models.DateField()
+    description = models.TextField()
+
+    def __str__(self):
+        return self.name
