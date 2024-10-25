@@ -84,10 +84,15 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'attendance_system_db',
+<<<<<<< HEAD
         'USER': 'ahmed',
         'PASSWORD': '$Swordfish1987',
+=======
+        'USER': '',
+        'PASSWORD': '',
+>>>>>>> 1aa3368989014b2697d21a7fe901eaf9235000d0
         'HOST': '127.0.0.1',          
-        'PORT': '3306',
+        'PORT': '',
     }
 }
 
