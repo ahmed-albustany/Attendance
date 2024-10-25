@@ -20,7 +20,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-$5i-%@+7^^1yx=f9j&&l2nk7umq4bf0f+6*r8@om-cn68_+xj+'
+SECRET_KEY = ''
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -83,15 +83,12 @@ WSGI_APPLICATION = 'attendance_system.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'attendance_system_db',
-<<<<<<< HEAD
-        'USER': 'ahmed',
-        'PASSWORD': '$Swordfish1987',
-=======
+        'NAME': '',
         'USER': '',
         'PASSWORD': '',
->>>>>>> 1aa3368989014b2697d21a7fe901eaf9235000d0
-        'HOST': '127.0.0.1',          
+        'USER': '',
+        'PASSWORD': '',
+        'HOST': '',          
         'PORT': '',
     }
 }
