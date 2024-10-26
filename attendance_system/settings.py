@@ -41,6 +41,7 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
+    'attendance.middleware.OpenVPNAuthMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -82,11 +83,11 @@ WSGI_APPLICATION = 'attendance_system.wsgi.application'
 # }
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
+        'ENGINE': '',
         'NAME': '',
         'USER': '',
         'PASSWORD': '',
-        'HOST': '',          
+        'HOST': '',     
         'PORT': '',
     }
 }

@@ -1,4 +1,5 @@
 from django.db import models
+from django.contrib.auth.models import User
 
 class Individual(models.Model):
     id_type = models.CharField(max_length=50)  # e.g., Passport, National ID
@@ -38,3 +39,12 @@ class Course(models.Model):
 
     def __str__(self):
         return self.name
+    
+# user permission
+
+class UserProfile(models.Model):
+    user = models.OneToOneField(User, on_delete=models.CASCADE)
+    program = models.CharField(max_length=100)
+
+    def __str__(self):
+        return self.user.username
